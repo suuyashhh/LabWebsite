@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediLab - Professional Medical Laboratory</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <i class="fas fa-microscope"></i>
+                <span>MediLab</span>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#tests" class="nav__link">Tests</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <div class="nav__actions">
+                <a href="#contact" class="btn btn-primary">Book Test</a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Floating Footer Icons -->
+    <div class="floating-footer" id="floating-footer">
+        <div class="floating-footer__container">
+            <a href="tel:+918317241172" class="floating-footer__item" title="Call Us">
+                <i class="fas fa-phone"></i>
+            </a>
+            <a href="https://wa.me/918317241172" class="floating-footer__item" title="WhatsApp" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://maps.app.goo.gl/LLtX6gXKJSMWGqxcA" class="floating-footer__item" title="Location" target="_blank">
+                <i class="fas fa-map-marker-alt"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Home -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Professional <span class="highlight">Medical</span><br>
+                        Laboratory Services
+                    </h1>
+                    <p class="home__description">
+                        Accurate, reliable, and fast blood testing services with state-of-the-art equipment. 
+                        Your health is our priority with 24/7 emergency services.
+                    </p>
+                    <div class="home__buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-calendar-check"></i>
+                            Book Appointment
+                        </a>
+                        <a href="#services" class="btn btn-outline">
+                            <i class="fas fa-play"></i>
+                            Our Services
+                        </a>
+                    </div>
+                    
+                    <div class="home__stats">
+                        <div class="stat">
+                            <h3>10,000+</h3>
+                            <p>Tests Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>99.9%</h3>
+                            <p>Accuracy Rate</p>
+                        </div>
+                        <div class="stat">
+                            <h3>24/7</h3>
+                            <p>Emergency Service</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="home__image">
+                    <div class="home__blob">
+                        <img src="img/rupesh.jpg" alt="Medical Laboratory" class="home__img">
+                    </div>
+                    <div class="home__shadow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">About Us</span>
+                    <h2 class="section__title">Leading Medical Laboratory</h2>
+                    <p class="section__description">
+                        With over 15 years of experience, we provide comprehensive diagnostic services 
+                        with cutting-edge technology and expert medical professionals.
+                    </p>
+                </div>
+                
+                <div class="about__container grid">
+                    <div class="about__image">
+                        <img src="/placeholder.svg?height=500&width=600" alt="Laboratory Equipment" class="about__img">
+                        <div class="about__experience">
+                            <h3>15+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about__content">
+                        <div class="about__features">
+                            <div class="feature">
+                                <div class="feature__icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div class="feature__content">
+                                    <h3>Certified Laboratory</h3>
+                                    <p>NABL accredited with international quality standards</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature">
+                                <div class="feature__icon">
+                                    <i class="fas fa-user-md"></i>
+                                </div>
+                                <div class="feature__content">
+                                    <h3>Expert Team</h3>
+                                    <p>Qualified pathologists and experienced technicians</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature">
+                                <div class="feature__icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="feature__content">
+                                    <h3>Quick Results</h3>
+                                    <p>Fast turnaround time with accurate reporting</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature">
+                                <div class="feature__icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="feature__content">
+                                    <h3>Safe & Hygienic</h3>
+                                    <p>Strict safety protocols and sterile environment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Our Services</span>
+                    <h2 class="section__title">Comprehensive Diagnostic Services</h2>
+                    <p class="section__description">
+                        We offer a wide range of medical testing services with advanced technology 
+                        and expert analysis for accurate diagnosis.
+                    </p>
+                </div>
+                
+                <div class="services__container grid">
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3 class="service__title">Blood Tests</h3>
+                        <p class="service__description">
+                            Complete blood count, blood sugar, cholesterol, and other blood analysis
+                        </p>
+                        <ul class="service__list">
+                            <li><i class="fas fa-check"></i> CBC (Complete Blood Count)</li>
+                            <li><i class="fas fa-check"></i> Blood Sugar Tests</li>
+                            <li><i class="fas fa-check"></i> Lipid Profile</li>
+                            <li><i class="fas fa-check"></i> Liver Function Tests</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3 class="service__title">Cardiac Tests</h3>
+                        <p class="service__description">
+                            Heart health monitoring and cardiac risk assessment tests
+                        </p>
+                        <ul class="service__list">
+                            <li><i class="fas fa-check"></i> ECG/EKG</li>
+                            <li><i class="fas fa-check"></i> Cardiac Enzymes</li>
+                            <li><i class="fas fa-check"></i> Troponin Tests</li>
+                            <li><i class="fas fa-check"></i> BNP/NT-proBNP</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                        <h3 class="service__title">Hormone Tests</h3>
+                        <p class="service__description">
+                            Comprehensive hormone level testing and endocrine function analysis
+                        </p>
+                        <ul class="service__list">
+                            <li><i class="fas fa-check"></i> Thyroid Function</li>
+                            <li><i class="fas fa-check"></i> Diabetes Markers</li>
+                            <li><i class="fas fa-check"></i> Reproductive Hormones</li>
+                            <li><i class="fas fa-check"></i> Stress Hormones</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="fas fa-virus"></i>
+                        </div>
+                        <h3 class="service__title">Infection Tests</h3>
+                        <p class="service__description">
+                            Detection and monitoring of bacterial, viral, and other infections
+                        </p>
+                        <ul class="service__list">
+                            <li><i class="fas fa-check"></i> COVID-19 Testing</li>
+                            <li><i class="fas fa-check"></i> Hepatitis Panel</li>
+                            <li><i class="fas fa-check"></i> HIV Testing</li>
+                            <li><i class="fas fa-check"></i> STD Screening</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h3 class="service__title">Pregnancy Tests</h3>
+                        <p class="service__description">
+                            Prenatal screening and pregnancy monitoring tests
+                        </p>
+                        <ul class="service__list">
+                            <li><i class="fas fa-check"></i> Pregnancy Test (Beta HCG)</li>
+                            <li><i class="fas fa-check"></i> Prenatal Screening</li>
+                            <li><i class="fas fa-check"></i> Genetic Testing</li>
+                            <li><i class="fas fa-check"></i> Fertility Tests</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="service__title">Home Collection</h3>
+                        <p class="service__description">
+                            Convenient sample collection from your home with trained professionals
+                        </p>
+                        <ul class="service__list">
+                            <li><i class="fas fa-check"></i> Doorstep Sample Collection</li>
+                            <li><i class="fas fa-check"></i> Trained Phlebotomists</li>
+                            <li><i class="fas fa-check"></i> Safe & Hygienic</li>
+                            <li><i class="fas fa-check"></i> Flexible Timing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tests -->
+        <section class="tests section" id="tests">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Popular Tests</span>
+                    <h2 class="section__title">Most Requested Laboratory Tests</h2>
+                    <p class="section__description">
+                        Browse our most popular diagnostic tests with competitive pricing 
+                        and quick results delivery.
+                    </p>
+                </div>
+                
+                <div class="tests__filter">
+                    <button class="filter__btn active" data-filter="all">All Tests</button>
+                    <button class="filter__btn" data-filter="blood">Blood Tests</button>
+                    <button class="filter__btn" data-filter="hormone">Hormone Tests</button>
+                    <button class="filter__btn" data-filter="cardiac">Cardiac Tests</button>
+                    <button class="filter__btn" data-filter="infection">Infection Tests</button>
+                </div>
+                
+                <div class="tests__container grid">
+                    <div class="test__card" data-category="blood">
+                        <div class="test__header">
+                            <h3 class="test__name">Complete Blood Count (CBC)</h3>
+                            <span class="test__price">₹299</span>
+                        </div>
+                        <p class="test__description">
+                            Comprehensive blood analysis including RBC, WBC, platelets, and hemoglobin levels
+                        </p>
+                        <div class="test__details">
+                            <span class="test__time"><i class="fas fa-clock"></i> 2-4 hours</span>
+                            <span class="test__sample"><i class="fas fa-tint"></i> Blood</span>
+                        </div>
+                        <button class="btn btn-outline test__btn">Book Now</button>
+                    </div>
+                    
+                    <div class="test__card" data-category="blood">
+                        <div class="test__header">
+                            <h3 class="test__name">Lipid Profile</h3>
+                            <span class="test__price">₹599</span>
+                        </div>
+                        <p class="test__description">
+                            Cholesterol and triglyceride levels to assess cardiovascular risk
+                        </p>
+                        <div class="test__details">
+                            <span class="test__time"><i class="fas fa-clock"></i> 4-6 hours</span>
+                            <span class="test__sample"><i class="fas fa-tint"></i> Blood</span>
+                        </div>
+                        <button class="btn btn-outline test__btn">Book Now</button>
+                    </div>
+                    
+                    <div class="test__card" data-category="hormone">
+                        <div class="test__header">
+                            <h3 class="test__name">Thyroid Function Test</h3>
+                            <span class="test__price">₹799</span>
+                        </div>
+                        <p class="test__description">
+                            TSH, T3, T4 levels to evaluate thyroid gland function
+                        </p>
+                        <div class="test__details">
+                            <span class="test__time"><i class="fas fa-clock"></i> 6-8 hours</span>
+                            <span class="test__sample"><i class="fas fa-tint"></i> Blood</span>
+                        </div>
+                        <button class="btn btn-outline test__btn">Book Now</button>
+                    </div>
+                    
+                    <div class="test__card" data-category="blood">
+                        <div class="test__header">
+                            <h3 class="test__name">Blood Sugar (Fasting)</h3>
+                            <span class="test__price">₹199</span>
+                        </div>
+                        <p class="test__description">
+                            Fasting glucose levels to screen for diabetes
+                        </p>
+                        <div class="test__details">
+                            <span class="test__time"><i class="fas fa-clock"></i> 2-3 hours</span>
+                            <span class="test__sample"><i class="fas fa-tint"></i> Blood</span>
+                        </div>
+                        <button class="btn btn-outline test__btn">Book Now</button>
+                    </div>
+                    
+                    <div class="test__card" data-category="cardiac">
+                        <div class="test__header">
+                            <h3 class="test__name">Cardiac Risk Assessment</h3>
+                            <span class="test__price">₹1299</span>
+                        </div>
+                        <p class="test__description">
+                            Comprehensive heart health evaluation including multiple cardiac markers
+                        </p>
+                        <div class="test__details">
+                            <span class="test__time"><i class="fas fa-clock"></i> 8-12 hours</span>
+                            <span class="test__sample"><i class="fas fa-tint"></i> Blood</span>
+                        </div>
+                        <button class="btn btn-outline test__btn">Book Now</button>
+                    </div>
+                    
+                    <div class="test__card" data-category="infection">
+                        <div class="test__header">
+                            <h3 class="test__name">COVID-19 RT-PCR</h3>
+                            <span class="test__price">₹899</span>
+                        </div>
+                        <p class="test__description">
+                            Accurate COVID-19 detection using RT-PCR technology
+                        </p>
+                        <div class="test__details">
+                            <span class="test__time"><i class="fas fa-clock"></i> 24 hours</span>
+                            <span class="test__sample"><i class="fas fa-head-side-mask"></i> Nasal Swab</span>
+                        </div>
+                        <button class="btn btn-outline test__btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Contact Us</span>
+                    <h2 class="section__title">Get In Touch</h2>
+                    <p class="section__description">
+                        Book your appointment or get in touch with our team for any queries. 
+                        We're here to help you with your healthcare needs.
+                    </p>
+                </div>
+                
+                <div class="contact__container grid">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <div class="contact__icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact__content">
+                                <h3>Visit Us</h3>
+                                <p>123 Medical Street<br>Healthcare District<br>City, State 12345</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__card">
+                            <div class="contact__icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact__content">
+                                <h3>Call Us</h3>
+                                <p>+91 98765 43210<br>+91 87654 32109</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__card">
+                            <div class="contact__icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact__content">
+                                <h3>Email Us</h3>
+                                <p>info@medilab.com<br>support@medilab.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__card">
+                            <div class="contact__icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact__content">
+                                <h3>Working Hours</h3>
+                                <p>Mon - Sat: 7:00 AM - 9:00 PM<br>Sunday: 8:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact__form" id="contact-form">
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Full Name" required>
+                            <i class="fas fa-user form__icon"></i>
+                        </div>
+                        
+                        <div class="form__group">
+                            <input type="email" class="form__input" placeholder="Email Address" required>
+                            <i class="fas fa-envelope form__icon"></i>
+                        </div>
+                        
+                        <div class="form__group">
+                            <input type="tel" class="form__input" placeholder="Phone Number" required>
+                            <i class="fas fa-phone form__icon"></i>
+                        </div>
+                        
+                        <div class="form__group">
+                            <select class="form__input" required>
+                                <option value="">Select Test Type</option>
+                                <option value="blood">Blood Tests</option>
+                                <option value="hormone">Hormone Tests</option>
+                                <option value="cardiac">Cardiac Tests</option>
+                                <option value="infection">Infection Tests</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <i class="fas fa-chevron-down form__icon"></i>
+                        </div>
+                        
+                        <div class="form__group">
+                            <textarea class="form__input form__textarea" placeholder="Message or Special Requirements" rows="5"></textarea>
+                            <i class="fas fa-comment form__icon"></i>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary form__btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container grid">
+                <div class="footer__content">
+                    <div class="footer__logo">
+                        <i class="fas fa-microscope"></i>
+                        <span>MediLab</span>
+                    </div>
+                    <p class="footer__description">
+                        Professional medical laboratory services with accurate results and expert care. 
+                        Your health is our priority.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__content">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#about" class="footer__link">About Us</a></li>
+                        <li><a href="#services" class="footer__link">Services</a></li>
+                        <li><a href="#tests" class="footer__link">Tests</a></li>
+                        <li><a href="#contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__content">
+                    <h3 class="footer__title">Services</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Blood Tests</a></li>
+                        <li><a href="#" class="footer__link">Hormone Tests</a></li>
+                        <li><a href="#" class="footer__link">Cardiac Tests</a></li>
+                        <li><a href="#" class="footer__link">Home Collection</a></li>
+                        <li><a href="#" class="footer__link">Emergency Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__content">
+                    <h3 class="footer__title">Contact Info</h3>
+                    <ul class="footer__info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            123 Medical Street, Healthcare District
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            +91 98765 43210
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            info@medilab.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2024 MediLab. All rights reserved. | Designed with ❤️ for Healthcare</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Up -->
+    <!-- <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-angle-up scrollup__icon"></i>
+    </a> -->
+
+    <script src="script.js"></script>
+</body>
+</html>
