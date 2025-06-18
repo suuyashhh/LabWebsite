@@ -1074,8 +1074,8 @@ button {
   }
 
   .floating-footer__item {
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
     font-size: 0.9rem;
   }
 }
