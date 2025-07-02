@@ -7,9 +7,22 @@
     <link rel="icon" href="img/Doctor Img.jpg" type="image/jpg">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader__container">
+            <div class="preloader__logo">
+                <i class="fas fa-microscope"></i>
+                <span>RupeshLab</span>
+            </div>
+            <div class="preloader__spinner"></div>
+            <p class="preloader__text">Loading...</p>
+        </div>
+    </div>
+
     <!-- Header -->
     <header class="header" id="header">
         <nav class="nav container">
@@ -42,7 +55,10 @@
             </div>
             
             <div class="nav__actions">
-                <a href="#contact" class="btn btn-primary">Book Test</a>
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i>
+                    Book Test
+                </a>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -50,7 +66,7 @@
         </nav>
     </header>
 
-    <!-- Floating Footer Icons -->
+    <!-- Floating Action Buttons -->
     <div class="floating-footer" id="floating-footer">
         <div class="floating-footer__container">
             <a href="tel:+918317241172" class="floating-footer__item" title="Call Us">
@@ -65,21 +81,26 @@
         </div>
     </div>
 
-    <!-- Main -->
+    <!-- Main Content -->
     <main class="main">
-        <!-- Home -->
+        <!-- Home Section -->
         <section class="home section" id="home">
+            <div class="home__particles"></div>
             <div class="home__container container grid">
                 <div class="home__data">
-                    <h1 class="home__title">
+                    <div class="home__badge animate__animated animate__fadeInDown">
+                        <i class="fas fa-award"></i>
+                        <span>NABL Certified Laboratory</span>
+                    </div>
+                    <h1 class="home__title animate__animated animate__fadeInUp">
                         Professional <span class="highlight">Medical</span><br>
                         Laboratory Services
                     </h1>
-                    <p class="home__description">
+                    <p class="home__description animate__animated animate__fadeInUp animate__delay-1s">
                         Accurate, reliable, and fast blood testing services with state-of-the-art equipment. 
                         Your health is our priority with 24/7 emergency services.
                     </p>
-                    <div class="home__buttons">
+                    <div class="home__buttons animate__animated animate__fadeInUp animate__delay-1s">
                         <a href="#contact" class="btn btn-primary">
                             <i class="fas fa-calendar-check"></i>
                             Book Appointment
@@ -90,13 +111,13 @@
                         </a>
                     </div>
                     
-                    <div class="home__stats">
+                    <div class="home__stats animate__animated animate__fadeInUp animate__delay-2s">
                         <div class="stat">
-                            <h3>10,000+</h3>
+                            <h3 class="counter" data-target="10000">0</h3>
                             <p>Tests Completed</p>
                         </div>
                         <div class="stat">
-                            <h3>99.9%</h3>
+                            <h3 class="counter" data-target="99.9">0</h3>
                             <p>Accuracy Rate</p>
                         </div>
                         <div class="stat">
@@ -106,16 +127,21 @@
                     </div>
                 </div>
                 
-                <div class="home__image">
+                <div class="home__image animate__animated animate__fadeInRight">
                     <div class="home__blob">
-                        <img src="img/Doctor Img.jpg" alt="Medical Laboratory" class="home__img">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Medical Laboratory" class="home__img">
                     </div>
                     <div class="home__shadow"></div>
+                    <div class="home__decorations">
+                        <div class="decoration decoration--1 pulse"></div>
+                        <div class="decoration decoration--2 pulse"></div>
+                        <div class="decoration decoration--3 pulse"></div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- About -->
+        <!-- About Section -->
         <section class="about section" id="about">
             <div class="container">
                 <div class="section__header">
@@ -128,13 +154,17 @@
                 </div>
                 
                 <div class="about__container grid">
-                    <div class="about__image">
-                        <img src="/img/RupLabImage.jpg" alt="Laboratory Equipment" class="about__img">                        
+                    <div class="about__image animate__animated animate__fadeInLeft">
+                        <img src="https://images.unsplash.com/photo-1581093450025-cdf0a8f6a318?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Laboratory Equipment" class="about__img">
+                        <div class="about__experience">
+                            <h3>15+</h3>
+                            <p>Years Experience</p>
+                        </div>
                     </div>
                     
                     <div class="about__content">
                         <div class="about__features">
-                            <div class="feature">
+                            <div class="feature animate__animated animate__fadeInUp">
                                 <div class="feature__icon">
                                     <i class="fas fa-award"></i>
                                 </div>
@@ -144,7 +174,7 @@
                                 </div>
                             </div>
                             
-                            <div class="feature">
+                            <div class="feature animate__animated animate__fadeInUp animate__delay-1s">
                                 <div class="feature__icon">
                                     <i class="fas fa-user-md"></i>
                                 </div>
@@ -154,7 +184,7 @@
                                 </div>
                             </div>
                             
-                            <div class="feature">
+                            <div class="feature animate__animated animate__fadeInUp animate__delay-2s">
                                 <div class="feature__icon">
                                     <i class="fas fa-clock"></i>
                                 </div>
@@ -164,7 +194,7 @@
                                 </div>
                             </div>
                             
-                            <div class="feature">
+                            <div class="feature animate__animated animate__fadeInUp animate__delay-3s">
                                 <div class="feature__icon">
                                     <i class="fas fa-shield-alt"></i>
                                 </div>
@@ -179,7 +209,7 @@
             </div>
         </section>
 
-        <!-- Services -->
+        <!-- Services Section -->
         <section class="services section" id="services">
             <div class="container">
                 <div class="section__header">
@@ -192,7 +222,7 @@
                 </div>
                 
                 <div class="services__container grid">
-                    <div class="service__card">
+                    <div class="service__card animate__animated animate__fadeInUp">
                         <div class="service__icon">
                             <i class="fas fa-tint"></i>
                         </div>
@@ -208,23 +238,7 @@
                         </ul>
                     </div>
                     
-                    <!-- <div class="service__card">
-                        <div class="service__icon">
-                            <i class="fas fa-heartbeat"></i>
-                        </div>
-                        <h3 class="service__title">Cardiac Tests</h3>
-                        <p class="service__description">
-                            Heart health monitoring and cardiac risk assessment tests
-                        </p>
-                        <ul class="service__list">
-                            <li><i class="fas fa-check"></i> ECG/EKG</li>
-                            <li><i class="fas fa-check"></i> Cardiac Enzymes</li>
-                            <li><i class="fas fa-check"></i> Troponin Tests</li>
-                            <li><i class="fas fa-check"></i> BNP/NT-proBNP</li>
-                        </ul>
-                    </div> -->
-                    
-                    <div class="service__card">
+                    <div class="service__card animate__animated animate__fadeInUp animate__delay-1s">
                         <div class="service__icon">
                             <i class="fas fa-dna"></i>
                         </div>
@@ -240,7 +254,7 @@
                         </ul>
                     </div>
                     
-                    <div class="service__card">
+                    <div class="service__card animate__animated animate__fadeInUp animate__delay-2s">
                         <div class="service__icon">
                             <i class="fas fa-virus"></i>
                         </div>
@@ -256,7 +270,7 @@
                         </ul>
                     </div>
                     
-                    <div class="service__card">
+                    <div class="service__card animate__animated animate__fadeInUp animate__delay-3s">
                         <div class="service__icon">
                             <i class="fas fa-baby"></i>
                         </div>
@@ -272,7 +286,7 @@
                         </ul>
                     </div>
                     
-                    <div class="service__card">
+                    <div class="service__card animate__animated animate__fadeInUp animate__delay-4s">
                         <div class="service__icon">
                             <i class="fas fa-home"></i>
                         </div>
@@ -291,7 +305,7 @@
             </div>
         </section>
 
-        <!-- Tests -->
+        <!-- Tests Section -->
         <section class="tests section" id="tests">
             <div class="container">
                 <div class="section__header">
@@ -312,7 +326,7 @@
                 </div>
                 
                 <div class="tests__container grid">
-                    <div class="test__card" data-category="blood">
+                    <div class="test__card animate__animated animate__fadeInUp" data-category="blood">
                         <div class="test__header">
                             <h3 class="test__name">Complete Blood Count (CBC)</h3>
                             <span class="test__price">₹299</span>
@@ -327,7 +341,7 @@
                         <button class="btn btn-outline test__btn">Book Now</button>
                     </div>
                     
-                    <div class="test__card" data-category="blood">
+                    <div class="test__card animate__animated animate__fadeInUp animate__delay-1s" data-category="blood">
                         <div class="test__header">
                             <h3 class="test__name">Lipid Profile</h3>
                             <span class="test__price">₹599</span>
@@ -342,7 +356,7 @@
                         <button class="btn btn-outline test__btn">Book Now</button>
                     </div>
                     
-                    <div class="test__card" data-category="hormone">
+                    <div class="test__card animate__animated animate__fadeInUp animate__delay-2s" data-category="hormone">
                         <div class="test__header">
                             <h3 class="test__name">Thyroid Function Test</h3>
                             <span class="test__price">₹799</span>
@@ -357,7 +371,7 @@
                         <button class="btn btn-outline test__btn">Book Now</button>
                     </div>
                     
-                    <div class="test__card" data-category="blood">
+                    <div class="test__card animate__animated animate__fadeInUp animate__delay-3s" data-category="blood">
                         <div class="test__header">
                             <h3 class="test__name">Blood Sugar (Fasting)</h3>
                             <span class="test__price">₹199</span>
@@ -372,7 +386,7 @@
                         <button class="btn btn-outline test__btn">Book Now</button>
                     </div>
                     
-                    <div class="test__card" data-category="cardiac">
+                    <div class="test__card animate__animated animate__fadeInUp animate__delay-4s" data-category="cardiac">
                         <div class="test__header">
                             <h3 class="test__name">Cardiac Risk Assessment</h3>
                             <span class="test__price">₹1299</span>
@@ -387,7 +401,7 @@
                         <button class="btn btn-outline test__btn">Book Now</button>
                     </div>
                     
-                    <div class="test__card" data-category="infection">
+                    <div class="test__card animate__animated animate__fadeInUp animate__delay-5s" data-category="infection">
                         <div class="test__header">
                             <h3 class="test__name">COVID-19 RT-PCR</h3>
                             <span class="test__price">₹899</span>
@@ -405,7 +419,7 @@
             </div>
         </section>
 
-        <!-- Contact -->
+        <!-- Contact Section -->
         <section class="contact section" id="contact">
             <div class="container">
                 <div class="section__header">
@@ -419,16 +433,17 @@
                 
                 <div class="contact__container grid">
                     <div class="contact__info">
-                        <div class="contact__card">
+                        <div class="contact__card animate__animated animate__fadeInLeft">
                             <div class="contact__icon">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div class="contact__content">
                                 <h3>Visit Us</h3>
-                                <p>Shop no G5,models marine Plaza,<br>Rupesh Lab<br>Caranzalem, Panaji, Goa</p>
+                                <p>Shop no G5, Models Marine Plaza,<br>Rupesh Lab<br>Caranzalem, Panaji, Goa</p>
                             </div>
-                        </div>                        
-                        <div class="contact__card">
+                        </div>
+                        
+                        <div class="contact__card animate__animated animate__fadeInLeft animate__delay-1s">
                             <div class="contact__icon">
                                 <i class="fas fa-phone"></i>
                             </div>
@@ -438,17 +453,17 @@
                             </div>
                         </div>
                         
-                        <div class="contact__card">
+                        <div class="contact__card animate__animated animate__fadeInLeft animate__delay-2s">
                             <div class="contact__icon">
                                 <i class="fas fa-envelope"></i>
                             </div>
                             <div class="contact__content">
                                 <h3>Email Us</h3>
-                                <p>rupeshlab0204@gmail.com<br></p>
+                                <p>rupeshlab0204@gmail.com</p>
                             </div>
                         </div>
                         
-                        <div class="contact__card">
+                        <div class="contact__card animate__animated animate__fadeInLeft animate__delay-3s">
                             <div class="contact__icon">
                                 <i class="fas fa-clock"></i>
                             </div>
@@ -459,7 +474,7 @@
                         </div>
                     </div>
                     
-                    <form class="contact__form" id="contact-form">
+                    <form class="contact__form animate__animated animate__fadeInRight" id="contact-form">
                         <div class="form__group">
                             <input type="text" class="form__input" placeholder="Full Name" required>
                             <i class="fas fa-user form__icon"></i>
@@ -558,7 +573,7 @@
                     <ul class="footer__info">
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
-                            <p>Shop no G5,models marine Plaza,<br>Rupesh Lab<br>Caranzalem, Panaji, Goa</p>
+                            <p>Shop no G5, Models Marine Plaza,<br>Rupesh Lab<br>Caranzalem, Panaji, Goa</p>
                         </li>
                         <li>
                             <i class="fas fa-phone"></i>
@@ -573,15 +588,15 @@
             </div>
             
             <div class="footer__bottom">
-                <p>&copy; 2024 RupeshLab. All rights reserved. | Developewd By Suyasah Patil..!</p>
+                <p>&copy; 2024 RupeshLab. All rights reserved. | Developed By Suyash Patil..!</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scroll Up -->
-    <!-- <a href="#" class="scrollup" id="scroll-up">
-        <i class="fas fa-angle-up scrollup__icon"></i>
-    </a> -->
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
     <script src="script.js"></script>
 </body>
