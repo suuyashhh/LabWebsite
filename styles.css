@@ -4,7 +4,6 @@
 /* ===== VARIABLES CSS ===== */
 :root {
   --header-height: 4rem;
-
   /* ========== Colors ========== */
   --primary-color: #7e5bef;
   --primary-color-alt: #6a4bd8;
@@ -20,7 +19,6 @@
   --shadow-color: rgba(0, 0, 0, 0.1);
   --glass-bg: rgba(255, 255, 255, 0.25);
   --glass-border: rgba(255, 255, 255, 0.18);
-
   /* ========== Font and typography ========== */
   --body-font: "Poppins", sans-serif;
   --biggest-font-size: 3.5rem;
@@ -30,7 +28,6 @@
   --normal-font-size: 1rem;
   --small-font-size: 0.875rem;
   --smaller-font-size: 0.75rem;
-
   /* ========== Font weight ========== */
   --font-light: 300;
   --font-regular: 400;
@@ -38,7 +35,6 @@
   --font-semi-bold: 600;
   --font-bold: 700;
   --font-extra-bold: 800;
-
   /* ========== Margins Bottom ========== */
   --mb-0-25: 0.25rem;
   --mb-0-5: 0.5rem;
@@ -49,7 +45,6 @@
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
-
   /* ========== z index ========== */
   --z-tooltip: 10;
   --z-fixed: 100;
@@ -202,7 +197,7 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 1rem 2rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 50px;
   font-weight: var(--font-semi-bold);
   transition: all 0.3s ease;
@@ -494,7 +489,7 @@ button {
 .back-to-top {
   position: fixed;
   bottom: 2rem;
-  right: 2rem;
+  left: 2rem;
   width: 50px;
   height: 50px;
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
@@ -586,7 +581,7 @@ button {
 }
 
 .highlight {
-  background: linear-gradient(135deg, var(--secondary-color), var(--success-color));
+  background: #00ff00;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1374,6 +1369,7 @@ button {
 }
 
 /* ========== BREAKPOINTS ========== */
+
 /* For large devices */
 @media screen and (max-width: 992px) {
   .container {
@@ -1433,22 +1429,55 @@ button {
 @media screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(20px);
+    /* UPDATED: Better background with solid color and subtle transparency */
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
     width: 85%;
     height: 100%;
     top: 0;
     right: -100%;
-    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+    /* UPDATED: Enhanced shadow for better depth */
+    box-shadow: -8px 0 32px rgba(0, 0, 0, 0.15);
     padding: 5rem 0 0 3rem;
     border-radius: 2rem 0 0 2rem;
     transition: right 0.3s ease;
     z-index: var(--z-fixed);
+    /* UPDATED: Added border for better definition */
+    border-left: 1px solid rgba(126, 91, 239, 0.1);
+  }
+
+  /* UPDATED: Enhanced mobile menu overlay */
+  .nav__menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, 
+      rgba(126, 91, 239, 0.02) 0%, 
+      rgba(168, 85, 247, 0.02) 50%, 
+      rgba(139, 92, 246, 0.02) 100%);
+    z-index: -1;
   }
 
   .nav__list {
     flex-direction: column;
     gap: 2rem;
+  }
+
+  /* UPDATED: Better styling for mobile nav links */
+  .nav__menu .nav__link {
+    font-size: 1.1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(126, 91, 239, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .nav__menu .nav__link:hover {
+    color: var(--primary-color);
+    padding-left: 0.5rem;
   }
 
   .nav__close {
@@ -1457,6 +1486,21 @@ button {
     top: 1.5rem;
     right: 2rem;
     font-size: 2rem;
+    /* UPDATED: Better close button styling */
+    background: rgba(126, 91, 239, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+
+  .nav__close:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: rotate(90deg);
   }
 
   .nav__toggle {
@@ -1465,6 +1509,19 @@ button {
 
   .show-menu {
     right: 0;
+  }
+
+  /* UPDATED: Add overlay when menu is open */
+  .show-menu::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    z-index: -1;
+    backdrop-filter: blur(2px);
   }
 
   .section {
@@ -1510,7 +1567,7 @@ button {
 
   .back-to-top {
     bottom: 1rem;
-    right: 1rem;
+    left: 1rem;
     width: 40px;
     height: 40px;
     font-size: 1rem;
@@ -1526,6 +1583,7 @@ button {
 
   .nav__menu {
     padding: 4rem 0 0 2rem;
+    width: 90%;
   }
 
   .home__blob {
@@ -1577,7 +1635,7 @@ button {
 
   .back-to-top {
     bottom: 0.75rem;
-    right: 0.75rem;
+    left: 0.75rem;
     width: 35px;
     height: 35px;
     font-size: 0.9rem;
